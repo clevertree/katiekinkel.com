@@ -1,0 +1,48 @@
+html {
+
+}
+
+body {
+
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article {
+    padding: 1em;
+    max-width: 1200px;
+}
+
+/** Site Experience Sections **/
+
+.markdown-body experience {
+    display: block;
+    position: relative;
+    border: 1px solid #444;
+    padding: 2px 8px;
+    margin-bottom: 12px;
+}
+
+.markdown-body experience time {
+    position: absolute;
+    top: 4px;
+    right: 8px;
+    font-style: italic;
+    font-size: smaller;
+}
+
+.markdown-body experience > headline {
+    display: block;
+    font-weight: bold;
+    font-size: larger;
+    border-bottom: 1px solid #000;
+    margin-bottom: 8px;
+}
+
+.markdown-body experience > p {
+    margin-bottom: 4px;
+}

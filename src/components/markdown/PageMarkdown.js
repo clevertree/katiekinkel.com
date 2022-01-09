@@ -22,7 +22,6 @@ export default class MarkdownContent extends React.Component {
             content: null,
             loaded: false
         }
-        // console.log('props', props);
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
@@ -45,7 +44,6 @@ export default class MarkdownContent extends React.Component {
     }
 
     render() {
-        console.log('this.props', this.props);
         return (
             <Markdown {...this.props} file={null}>
                 {this.state.loaded ? this.state.content : "Loading Markdown page: " + this.props.file}

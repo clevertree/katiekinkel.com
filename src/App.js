@@ -2,7 +2,6 @@ import './App.css';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 /** CSS Styles **/
-import "github-markdown-css/github-markdown-light.css"
 import "./pages/site/site.css"
 
 /** Pages **/
@@ -15,8 +14,8 @@ import MarkdownContent from "./components/markdown/PageMarkdown";
 function App() {
     return (
         <BrowserRouter>
-            <MarkdownContent file={HeaderPage} options={{wrapper: 'header'}}/>
-            <MarkdownContent file={NavPage} options={{wrapper: 'nav'}}/>
+            <MarkdownContent file={HeaderPage} options={{wrapper: 'header', forceWrapper: true}}/>
+            <MarkdownContent file={NavPage} options={{wrapper: 'nav', forceWrapper: true}}/>
             <Routes>
                 <Route path="/" element={<MarkdownContent file={IndexPage}/>}/>
             </Routes>

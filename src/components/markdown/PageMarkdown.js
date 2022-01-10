@@ -11,7 +11,8 @@ export default class MarkdownContent extends React.Component {
 
     static defaultProps = {
         options: {
-            wrapper: 'article'
+            wrapper: 'article',
+            forceWrapper: true
         },
         className: "markdown-body"
     }

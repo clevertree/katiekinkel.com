@@ -122,7 +122,7 @@ Creation, recruitment, posting, and maintaining social media for a themed musica
   </tr>
 </table>
 
-## References:**
+## References:
 
 <table class="references">
   <tr>
